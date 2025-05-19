@@ -156,6 +156,8 @@ public class HttpUserAgentParserTests
     [InlineData("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Safari/605.1.15 (Applebot/0.1; +http://www.apple.com/go/applebot)", "Applebot")]
     [InlineData("Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36; 360Spider", "360Spider")]
     [InlineData("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko; GeedoProductSearch; +https://geedo.com/product-search.html) Chrome/134.0.0.0 Safari/537.36", "GeedoProductSearch")]
+    [InlineData("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 FirecrawlBot/1.0 (+https://www.firecrawl.dev)", "FirecrawlBot")]
+    [InlineData("Mozilla/5.0 (iPhone; CPU iPhone OS 16_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.2 Mobile/15E148 YisouSpider/5.0 Safari/604.1", "YisouSpider")]
     public void BotTests(string ua, string name)
     {
         HttpUserAgentInformation uaInfo = HttpUserAgentInformation.Parse(ua);

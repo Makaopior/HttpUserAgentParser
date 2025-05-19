@@ -281,7 +281,9 @@ public static class HttpUserAgentStatics
         ( "Cotoyogi", "Cotoyogi" ),
         ( "Applebot", "Applebot" ),
         ( "360Spider", "360Spider" ),
-        ( "GeedoProductSearch", "GeedoProductSearch" )
+        ( "GeedoProductSearch", "GeedoProductSearch" ),
+        ( "FirecrawlBot", "FirecrawlBot" ),
+        ( "YisouSpider", "YisouSpider" )
     ];
 
     /// <summary>
